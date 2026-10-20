@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #07110d;
+  color: #f0fff6;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin: 20px 0 30px;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.header h1 span {
+  color: #20d879;
+  font-size: 18px;
+}
+
+.header p,
+#userLabel {
+  color: #a2bcae;
+}
+
+.container {
+  max-width: 650px;
+  margin: auto;
+}
+
+.card {
+  background: #11221a;
+  border: 1px solid #284635;
+  padding: 22px;
+  border-radius: 18px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 9px 0;
+  border: 1px solid #315440;
+  border-radius: 10px;
+  background: #08150e;
+  color: white;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 16px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 10px;
+  background: #20d879;
+  color: #052313;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#authPanel button {
+  width: 100%;
+}
+
+.secondary {
+  background: #21392c;
+  color: white;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.messages {
+  height: 350px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 0;
+}
+
+.bubble {
+  background: #1b3828;
+  border: 1px solid #315b40;
+  border-radius: 12px;
+  padding: 10px;
+  max-width: 85%;
+  align-self: flex-start;
+  overflow-wrap: anywhere;
+}
+
+.bubble.mine {
+  background: #125633;
+  align-self: flex-end;
+}
+
+.meta {
+  color: #a5cbb4;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.message-text {
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+#messageForm {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#messageInput {
+  flex: 1;
+  min-width: 0;
+}
+
+.notice {
+  padding: 12px;
+  background: #453716;
+  color: #ffe5a1;
+  border-radius: 10px;
+  margin: 12px 0;
+}
+
+.empty {
+  color: #a2bcae;
+  text-align: center;
+  margin: auto;
+}
+
+#authStatus,
+#chatStatus {
+  color: #20d879;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  text-align: center;
+  color: #789584;
+  margin-top: 25px;
+  font-size: 13px;
+}
+
+@media (max-width: 420px) {
+  body {
+    padding: 12px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .messages {
+    height: 300px;
+  }
+}
